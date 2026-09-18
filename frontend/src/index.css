@@ -141,3 +141,92 @@ textarea:focus {
   background-color: rgb(194, 74, 19);
   font-stretch: expanded;
 }
+
+
+/* Tablet */
+@media screen and (max-width: 900px) {
+
+  .heading {
+    top: 18%;
+    width: 100%;
+  }
+
+  pre {
+    font-size: 30px;
+  }
+
+  .outer-div {
+    width: 80vw;
+    height: 220px;
+  }
+
+  .inner-div {
+    width: 90%;
+    height: 90%;
+  }
+
+  .input-div {
+    width: 65%;
+  }
+
+  .input-mail-content {
+    font-size: 16px;
+  }
+}
+
+
+/* mobile */
+@media screen and (max-width: 600px) {
+
+  .heading {
+    top: 15%;
+    width: 100%;
+  }
+
+  pre {
+    font-size: 22px;
+  }
+
+  .outer-div {
+    width: 90vw;
+    height: 280px;
+  }
+
+  .inner-div {
+    width: 90%;
+    height: 90%;
+
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .input-div {
+    width: 100%;
+    height: 70%;
+  }
+
+  .input-mail-content {
+    width: 100%;
+    height: 100%;
+
+    border-right: none;
+    border-bottom: 3px solid var(--borderColor);
+
+    font-size: 16px;
+  }
+
+  textarea:focus {
+    border-right: none;
+    border-bottom: 3px solid var(--borderColorHover);
+  }
+
+  .send-btn-div {
+    width: 100%;
+    height: 50px;
+  }
+
+  .send-btn {
+    width: 60px;
+    height: 40px;
+  }
+}

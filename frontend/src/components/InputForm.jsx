@@ -8,6 +8,9 @@ const InputForm = () => {
   const [result,setResult] = useState("");
 
   const handleSubmit = async() => {
+    if(mail === ""){
+      return alert("Enter Email Content !");
+    }
     try{
       const response = await axios.post(`${import.meta.env.VITE_API_KEY}/predict`,{email:mail})
       alert(response.data.prediction)

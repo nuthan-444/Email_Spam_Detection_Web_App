@@ -180,7 +180,7 @@ textarea:focus {
 }
 
 .link-btn:hover {
-  background-color: var(--borderColorHover);
+  background-color: var(--fontOrangeColor);
   width: fit-content;
   margin-bottom: 10px;
 }

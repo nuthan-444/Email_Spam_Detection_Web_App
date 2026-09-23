@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from "axios"
+import LinkDiv from './LinkDiv';
 
 
 
@@ -40,13 +41,13 @@ const InputForm = () => {
 
         <div className='send-btn-div'>
           <button className="send-btn" title='predict' onClick={handleSubmit}>
-            <i className="fa-solid fa-arrow-right-long" style={{color: "rgb(0, 0, 0)"}}></i>
+            <i className="fa-solid fa-arrow-right-long"></i>
           </button>
         </div>
 
       </div>
-
     </div>
+    <LinkDiv />
     </>
   )
 }
